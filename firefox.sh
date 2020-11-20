@@ -3,8 +3,8 @@ sleep 5
 killall firefox
 ff_profile=$(echo ~/.mozilla/firefox/*.default-release)
 
-install_package sqlite3
-echo "DELETE FROM moz_bookmarks" | sqlite3 $ff_profile/places.sqlite
+#install_package sqlite3
+#echo "DELETE FROM moz_bookmarks" | sqlite3 $ff_profile/places.sqlite
 
 mkdir $ff_profile/chrome
 echo '#webrtcIndicator { display: none !important; }' >> $ff_profile/chrome/userChrome.css
